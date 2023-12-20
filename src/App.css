@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-color: #fff;
+  height: 100vh;
+  overflow: hidden;
+  /* it will hide the scroll bars */
+  
+}
+
+
+.y-scroll{
+    overflow-x : hidden;
+    overflow-y : auto;
+    scrollbar-width: thin; 
+   
+    
+}
+.y-scroll::-webkit-scrollbar {
+display: block;
+width:5px;
+/* overflow: auto; */
+
+
+}
+
+.container-fluid{
+  display:flex;
+}
+/*main{
+  width: 100%;
+  padding: 1px;
+}*/
+.sidebar{
+  background: #d5e8e7;
+  color: #192A53;
+  width: 82px;
+  transition: all 0.5s;
+  overflow: visible;
+  height: 100vh; 
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+.profileBox{
+  /* margin: "0px 0px"; */
+  padding: "12px"; 
+  background-color: #D7E9E8;
+  border-bottom: 1px solid grey;
+  justify-content: center;
+  display: flex;
+ 
+}
+.sidebar:hover .profileBox{
+  width: 160px; 
+  border-bottom: 1px solid grey;
+  background-color: #D7E9E8;
+  margin: "0px 0px";
+  padding: "12px";
+}
+.link_text{
+  display: none;
+}
+.sidebar:hover {
+  width: 200px; /* Change the width when hovered */
+}
+.sidebar:hover  .link_text{
+  display: block;
+}
+.top_section{
+  width: 82px;
+    text-align: center;
+    margin: 15px 0;
+}
+.logo{
+  font-size: 30px;
+}
+.bars{
+  display: flex;
+  font-size: 25px;
+  margin-left: 120px;
+}
+.link{
+  display: flex;
+  color: #192A53;
+  padding: 25px 30px;
+  gap: 15px;
+  transition: all 0.5s;
+  text-decoration: none;
+  margin: 0px 0px;
+}
+.link:hover{
+  background: white;
+  color: #000;
+  transition: all 0.5s;
+}
+.active{
+  color:#2799ab!important;
+  font-weight: 400;
+}
+/* .active-link{
+  color:#2196F3;
+  font-weight: 600;
+} */
+
+.actives{
+  color: black;
+}
+.icon, .link_text{
+  font-size: 16px;
+}
+.icon{
+  transition: all 0.1s ease-in;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.callerlist:hover{
+ transition: all 0.5s;
+  background-color: #000;
+  
+}
+
+
+.profilebtn:hover , .subaccount:hover , .accountmanager:hover{
+    padding: 10px 20px!important;
+    border-radius: 0%!important;
+    background-color: #340a87e3!important;
+}
+
+
+
+/*`sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+
+ }
+
+/*`md` applies to small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+
+ }
+
+/* `lg` applies to medium devices (tablets, less than 992px)*/
+/* @media (max-width: 991.98px) { 
+  .addgroup_output{
+    display: none;
+  }
+  .addgroupdiv{
+    width: 100%!important;
+  }
+ } */
+
+/* `xl` applies to large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+
+ }
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) { 
+
+ }
+
+ .error{
+  color:red;
+  font-size: 15px;
+  font-weight: bold;
+ }
+
+ 
+ 
+
+
+.outlet{
+  width: calc(100% - 330px - 82px);
+  
+}
+
+.list-style{
+  margin-right: 15px;
+  color: white;
+
+
+}
+
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.01); /* semi-transparent black */
+}
+.btn-close{
+  top:0;
+  right:0;
+  position:absolute;
+}
+.transparent-modal-background{
+  opacity: 1!important;
+}
+
+
+.filled {
+  color: red;
+}
+.adding{
+  color:green;
+}
+
+.handle-overflow{
+  height: 60vh;   /*350px*/
+  overflow-y: auto;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.handle-overflow::-webkit-scrollbar{
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.handle-overflow {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+.notification-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.notification-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 50%;
+}
+.active-tab {
+  background-color: green;
+}
+
+.no-highlight:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* handling overflow for the cards  380px*/
+.handleCardOverflow{
+  /* height: 420px;   */
+  height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.handleCardOverflow::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.handleCardOverflow {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+.vertical-line {
+  border-left: 1px solid grey;
+  height: 50px; /* or any desired height */
+  
+}
+
+/* highlighting the calling dashboard tab border custom */
+
+.nav-tabs .nav-link.active {
+  color: var(--bs-nav-tabs-link-active-color);
+  /* background-color: #192A53; */
+  /* border-color: var(--bs-nav-tabs-link-active-border-color); */
+  /* border-top: 3px springgreen; */
+  border-top: 3px solid #192A53;
+  
+}
+
+.transparent-modal-background {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the desired transparency */
+}
+a {
+  text-decoration: none;
+}
+.dropdown-toggle::after{
+  color : #ffff!important;
+}
+
+.blinking-dot {
+  /* background: green;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%; */
+  display: inline-block;
+  margin-left: 5px;
+  animation: blink 0.5s infinite alternate; /* Blink animation */
+  color:"green";
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.tablebtns {
+  background-color: "#192A53";
+  color:"#fff" ;
+  padding:"4px 2px" ;
+}
